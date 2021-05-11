@@ -1,0 +1,32 @@
+<html>
+<head>
+</head>
+<body>
+Sayi: <input type="text" name="Sayi" id="sayi"><br>
+<input type="button" value="Asal Mi" id="asal" onclick="asal()">
+
+<script type="text/javascript" language="javascript">
+	function asal()
+	{
+		var sayi=parseInt(document.getElementById('sayi').value);
+		var asalmi=true;
+		for(var i=2; i<sayi; i++)
+		{
+			if(sayi%i==0)
+			{
+				asalmi=false;
+				break;
+			}
+		}
+			if(asalmi==true)
+			{
+				alert(sayi + " Asal Bir sayidir.");
+			}
+			else
+			{
+				alert(sayi + " Asal Bir sayi değildir.");
+			}
+	}
+</script>
+</body>
+</html>

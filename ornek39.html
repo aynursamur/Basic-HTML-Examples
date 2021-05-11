@@ -1,0 +1,42 @@
+<html>
+<head>
+	<meta charset="utf8">
+</head>
+<body>
+
+<form action="http://172.21.106.89:88/ortak/form/kaydet.php" method="post" 
+	enctype="multipart/form-data" style="width:50%">
+	<input type="hidden" name="ID" value="321">
+	<fieldset>
+		<legend>Kişisel Bilgiler</legend>
+		Ad Soyad: <input name="ad"><br>
+		Şifre: <input name="sifre" type="password"><br>
+		Eğitim Durumu: <select name="egitim">
+			<option value="0">Belirtilmemiş</option>
+			<option value="1">İlkokul</option>
+			<option value="2">Ortaokul</option>
+			<option value="3">Lise</option>
+			<option value="4" selected>Üniversite</option>
+		</select>
+	</fieldset>
+	<fieldset>
+		<legend>Ek Bilgiler</legend>
+		Resim: <input name="resim" type="file"><br>
+		Özgeçmiş: <input name="cv" type="file"><br>
+		Cinsiyet: <input name="cins" type="radio" value="E"> Bay 
+		<input name="cins" type="radio" value="K" checked> Bayan<br>
+		Bildiğiniz Diller: 
+			<input type="checkbox" name="dil1" value="1" id="d1" checked>
+				<label for="d1"> PHP</label>
+			<input type="checkbox" name="dil2" value="1" id="d2">
+				<label for="d2"> C#</label>
+			<input type="checkbox" name="dil3" value="1" id="d3">
+				<label for="d3"> JavaScript</label><br>
+		Düşünceler:<br><textarea name="dusunce" cols="50" rows="10"></textarea><br>
+	</fieldset>
+	<input type="submit" value="Kaydet">
+	<input type="reset">
+</form>
+
+</body>
+</html>

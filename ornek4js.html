@@ -1,0 +1,31 @@
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+	</head>
+		<body>
+	
+		sayi:<input type="text" name="Sayi" id="sayi"><br>
+		<input type="button" value="faktoriyel hesapla"  id="hesapla" onclick="hesapla()"><br>
+		<input type="text" name="Faktoriyel" id="sonuc">
+		<script type="text/javascript" language="javascript">
+			function hesapla()
+			{
+				var sayi=parseInt(document.getElementById('sayi').value);
+				var faktor=1;
+				if(sayi>=0 && sayi<2) return 1;
+				
+				for(var i=2; i<=sayi; i++)
+				{
+				faktor=faktor*i;
+				}
+				//alert(sayi+" sayisinin faktöriyeli "+faktor);
+				document.getElementById('sonuc').value=faktor;
+				
+			}
+				
+				
+		</script>
+	
+		</body>
+<html>

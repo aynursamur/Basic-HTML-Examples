@@ -1,0 +1,23 @@
+<html>
+<head>
+	<meta charset="utf8">
+</head>
+<body>
+<form action="kaydet.php" method="POST" enctype="multipart/form-data">
+	Ad Soyad <input name="ad" value="Asım KOCABIYIK"><br>
+	Şifre <input name="sifre" type="password" value="123"><br>
+	<input name="cinsiyet" type="radio" value="e" checked> Bay 
+	<input name="cinsiyet" type="radio" value="k"> Bayan<br>
+	<input name="reklam" type="checkbox" value="1" checked> Reklam mesajı gönder<br>
+	Resim <input name="resim" type="file"><br>
+	Site hakkındaki düşünceniz:
+	<select name="dusunce">
+		<option value="0">Kötü</option>
+		<option value="1">Normal</option>
+		<option value="2" selected>İyi</option>
+	</select><br>
+	<input type="submit" value="Kaydet">
+</form>
+</body>
+</html>
+

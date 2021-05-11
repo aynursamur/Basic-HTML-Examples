@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+</head>
+<body>
+<script type="text/javascript" language="javascript">
+	function Bul()
+	{
+		var a=parseInt(document.getElementById('sayi1').value);
+		var b=parseInt(document.getElementById('sayi2').value);
+		var i=0;
+		if(a<b)
+			{
+				alert("Birinci Sayı İkinci Sayıdan Büyük Olmalı");
+				
+			}
+		else
+			{
+				for(i=b;i<a;i++)
+					{
+						if((i%3==0)&& (i%5==0))
+							{
+								document.getElementById('sonuc').value+=i + " ";
+							}
+					}
+			}
+ 
+	}
+</script>
+
+Sayi 1: <input type="text" name="sayi1" id="sayi1"><br />
+Sayi 2:<input type="text" name="sayi2" id="sayi2" ><br />
+Arasındaki sayılar..:<br />
+<textarea cols="60" rows="5" name="sayilar" id="sonuc"></textarea><br />
+<input type="button" Value="Sayıları Bul" id="bul" onClick="Bul()">
+<input type="reset" value="Temizle" />
+
+</body>
+</html>
